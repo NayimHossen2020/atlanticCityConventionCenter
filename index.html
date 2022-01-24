@@ -17,7 +17,7 @@
 <body>
     <!-- header section -->
     <header class="mb-5">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -121,15 +121,16 @@
         <!-- album section -->
         <section>
             <div class="container my-5">
-                <div class="row d-flex justify-content-center h-100 align-items-center">
+                <div class="row d-flex justify-content-between h-100 align-items-center">
                     <div class="col-md-6">
-                        <img class="img-fluid" src="./images/wedding.png" alt="">
+                        <img class="img-fluid" src="./images/wedding.jpg" alt="">
                     </div>
                     <div class="col-md-6">
-                        <h1 class="fw-bold text-orange">Every moment is Precious </h1>
-                        <p class="small-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                            do amet sint. Velit officia consequat duis enim velit mollit.
-                            Exercitation veniam consequat sunt nostrud amet.</p>
+                        <h1 class="fw-bold text-orange">Every moment is a precious, unique and incredible gift of life.
+                        </h1>
+                        <p class="small-text">Rare and precious moments, how I long to live with you eternally! If only
+                            your sweetness never ceased to touch my lips, and the flutters you evoke nevermore faded
+                            away..</p>
                         <div class="alert alert-warning alert-dismissible fade show" role="alert">
                             <strong>20%</strong> off next booking
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -228,7 +229,7 @@
                 <h2 class="my-5 fw-bold text-center">Happy Clients says</h2>
             </div>
 
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 gx-5">
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 gx-5 gy-4">
                 <div class="col">
                     <div class="card text-center border-0 shadow" style="width: 22rem;">
                         <div class="card-body">
@@ -356,6 +357,55 @@
                 </div>
                 <div class="col-lg-6 col-md-12">
                     <img class="img-fluid" src="./images/people.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- contact us section -->
+        <section class="container">
+            <div>
+                <h2 class="my-5 fw-bold text-center">Contact with Us</h2>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6">
+                    <img class="img-fluid" src="./images/contact.png" alt="">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
+                            <div class="row mb-3">
+                                <div class="form-group col-sm-6">
+                                    <label for="name" class="h4">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required
+                                        data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="name" class="h4">Email</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required
+                                        data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                                <div class="form-group col-sm-12 mt-2">
+                                    <label for="name" class="h4">Phone</label>
+                                    <input type="number" class="form-control" id="name" placeholder="Enter name"
+                                        required data-error="NEW ERROR MESSAGE">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="h4 ">Message</label>
+                                <textarea id="message" class="form-control" rows="5" placeholder="Enter your message"
+                                    required></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <button type="submit" id="form-submit"
+                                class="btn btn-success btn-lg pull-right ">Submit</button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
