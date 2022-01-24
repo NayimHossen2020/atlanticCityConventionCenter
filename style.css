@@ -30,6 +30,16 @@ body{
     font-weight: 400;
     color: #888888;
 }
+li{
+    list-style: none;
+}
+li .fas{
+    background-color: rgb(247, 225, 225);
+    color: rgb(123, 123, 243);
+    border-radius: 50%;
+    padding: 3px;
+    font-size: 10px;
+}
 .text-blue{
     color: #646081;
 }
